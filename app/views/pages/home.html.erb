@@ -1,7 +1,7 @@
 <style type="text/css">
 
 .section.first {
-  background: url("/assets/texture.png") repeat;
+  background: url("/assets/texture3.jpg") repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -247,6 +247,18 @@ a:hover {
 .pricing-cell.expo {
   border-bottom: 1px solid #fefefe;
 }
+
+
+.timespan {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #d4d4d4;
+  width: 250px;
+  height: 34px;
+  display: inline-block;
+}
+
 </style>
 
 <div class="section first">
@@ -256,7 +268,7 @@ a:hover {
 			<div class="row fade-in">
 				<div class="small-9 medium-4 small-centered columns">
 					<div class="logo">
-						<img src="assets/EN_logo.png" alt="Easyretentionlogo 919c892cdd47e7ce873c57a9bfeff8b5af3c3cb3d7a0598f7f56c0b5ce26da74" />
+						<img src="assets/logo.png" />
 					</div>
 				</div>
 			</div>
@@ -265,7 +277,7 @@ a:hover {
 				<h1>Built to Optimize Your Event Marketing</h1>
 			</div>
 
-			<h2 class="subtitle fade-in two">The <strong>best</strong> way to <strong>increase</strong> your purchasing powering when liaising with sponsors; boost your bottom line and make smarter decisions.</h2>
+			<h2 class="subtitle fade-in two">The best way to <strong>improve</strong> your <br>events and sell <strong>more</strong> tickets.</h2>
 
 
 		</div>
@@ -278,6 +290,19 @@ a:hover {
 		<div class="medium-11 medium-centered columns text-center">
 
 		<p class="bottom_bar"><strong>Start your 30-day unlimited free trial.</strong> No obligation, no credit card required.<br> <br> Choose the plan that works best for you.</p>
+
+		<div class="row">
+			<div id="" class="col-sm-offset-4 col-sm-4 col-xs-12 timespan">
+				<div id="timespan-inner">
+					<a href="" data-per="month" class="one-time active" ng-click="togglePricing('one-time')">
+						One time					</a>
+					<a href="" ng-click="togglePricing('annual')" class="annual">
+                        Monthly                    </a>
+				</div>
+			</div>
+		</div>
+
+
 
 			<div class="pricing clearfix">
 		<div class="pricing-table clearfix">
@@ -388,13 +413,18 @@ a:hover {
 
 <div class="section gray">
 	<div class="row">
-		<div class="medium-10 large-9 medium-centered columns text-center">
+		<div class="large-11 medium-centered columns text-center">
 
 			<h2 class="bottom_bar">MARKETING TOOLS</h2>
+
+			<p>EventNinja ties data to people who attend your events to see who they are and how often they attend. See groups of attendees with similar activity profiles, improve your events by following along as people experience it, or send attendees a message to get their feedback.</p>
+
 
 			<div class="row">
 		
 				<div class="medium-6 columns text-left">
+
+
 					<h5>PEOPLE ANALYTICS</h5>
 
 					<h4>It's time to get to know your attendees.</h4>
@@ -422,16 +452,16 @@ a:hover {
 					<p>Empower your marketing team to take action on what they learn. </p>
 
 					<ul>
-						<li>Design and send custom event communications - from RSVP to reminder</li>
+						<li>Send custom event communications</li>
 						<li>Purchase additional email credits</li>
+						<li>Automated emails</li>
 						<li>Email scheduling</li>
-						<li>Email analytics*</li>
+						<li>Email analytics</li>
 					</ul>
 				</div>
 			</div>
 
-			<p>EventNinja ties data to people who attend your events to see who they are. Query groups of attendees with similar activity profiles, improve your events by following along as people experience it, or send attendees a message to get their feedback.</p>
-
+			
 		</div>
 	</div>
 </div>
@@ -439,7 +469,7 @@ a:hover {
 
 <div class="section">
 	<div class="row">
-		<div class="medium-10 large-8 medium-centered columns text-center">
+		<div class="large-11 medium-centered columns text-center">
 
 			<h2 class="bottom_bar">SALES ANALYTICS</h2>
 
@@ -452,16 +482,8 @@ a:hover {
 
 					<p>Visualise how often your attendees return and engage with your events.</p>
 
-					<ul>
-						<li>Easily add, merge, tag and export attendees</li>
-						<li>Find specific people based on unqiue criteria</li>
-						<li>View attendees profile history</li>
-						<li>Create and manage lists</li>
-						<li>Access and save queries</li>
-						<li>Access Full Contact API</li>
+					<p>Retention reports display attendees recurring behavior, but it can also show follow-up behavior. If two behaviors are related, then retention reports will show how often an attendee purchased a ticket then the other.</p>
 
-
-					</ul>
 				</div>
 
 			
@@ -471,13 +493,13 @@ a:hover {
 
 					<h4>Know where your money is best spent.</h4>
 
-					<p>Empower your marketing team to take action on what they learn. </p>
+					<p>This gives you metrics like:</p>
 
-					<ul>
-						<li>Design and send custom event communications - from RSVP to reminder</li>
-						<li>Purchase additional email credits</li>
-						<li>Email scheduling</li>
-						<li>Email analytics*</li>
+					<p>The total revenue you've received from each traffic source for single and all events</p>
+					
+					<p>The average revenue of customers from that traffic source for single and all events</p>
+					
+					<p>The total value you can expect to receive in the long term (we call this lifetime value)</p>
 					</ul>
 				</div>
 			</div>
@@ -487,6 +509,41 @@ a:hover {
 </div>
 
 <div class="section gray">
+	<div class="row">
+		<div class="large-11 medium-centered columns text-center">
+
+			<h2 class="bottom_bar">ADDITIONAL ADD-ONS</h2>
+
+			<div class="row">
+		
+				<div class="medium-3 columns text-center">
+					<h5>EMAIL CREDITS</h5>
+					<p>Almost out? Upgrade anytime with flexible options starting at $30 for 1,000 additional email credits.</p>
+				</div>
+
+
+				<div class="medium-3 columns text-center">
+					<h5>EASY TICKETING</h5>
+					<p>Create and sell tickets at your event. A standard fee of 2.0% + £0.5 applies for each ticket sold across all packages.</p>
+				</div>
+
+				<div class="medium-3 columns text-center">
+					<h5>CUSTOM FORMS</h5>
+					<p>Ask & analyse all the questions you need for your event with customizable forms and charts.</p>
+				</div>
+
+				<div class="medium-3 columns text-center">
+					<h5>WIDGET</h5>
+					<p>Share your events around the web with our Ticket Widgets</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="section">
 	<div class="row">
 		<div class="medium-10 large-9 medium-centered columns text-center">
 
@@ -530,7 +587,7 @@ a:hover {
 
 			<div class="row">	
 				<div class="medium-9 medium-centered columns">
-					<h2 class="subtitle"><strong>EasyRetention is coming soon, don't let your competitors outsmart you!</strong></h2>
+					<h2 class="subtitle"><strong>Start Improving Your Marketing Today</strong></h2>
 				</div>
 			</div>
 
