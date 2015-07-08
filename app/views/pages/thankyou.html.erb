@@ -1,2 +1,543 @@
-<h1>About US</h1>
-<p>We are working on our One Month Rails Pinteresting app</p>
+<style type="text/css">
+
+.section {
+  padding: 93px 0;
+}
+
+.section.first {
+  background: url("/assets/texture3.jpg") repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.section2 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pricing-table {
+  border: 1px solid #ced7df;
+  border-radius: 3px;
+  padding-bottom: 586px;
+  background: #fefefe;
+  box-sizing: border-box;
+}
+
+.pricing-table-column {
+  width: 33.33%;
+  box-sizing: border-box;
+  float: left;
+  border-right: 1px solid #f4f7f9;
+  position: relative;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.pricing-cell {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #f4f7f9;
+  overflow: visible;
+  position: relative;
+}
+
+.pricing-cell2 {
+  text-align: center;
+  padding: 100px;
+  border-bottom: 1px solid #f4f7f9;
+  border-left: 1px solid #f4f7f9;
+  overflow: visible;
+  position: relative;
+}
+
+.pricing-cell h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.pricing-table--price {
+  background: #e9f4fd;
+  color: #168eea;
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.pricing-table .pricing-cell .button {
+  margin-bottom: 0;
+  display: block;
+  z-index: 1;
+}
+
+.pricing-cell {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #f4f7f9;
+  overflow: visible;
+  position: relative;
+}
+
+.pricing-cell2 {
+  text-align: center;
+  padding: 100px;
+  border-bottom: 1px solid #f4f7f9;
+  border-left: 1px solid #f4f7f9;
+  overflow: visible;
+  position: relative;
+}
+
+.pricing-cell3 {
+  text-align: center;
+  padding-bottom: 212px;
+  border-bottom: 1px solid #f4f7f9;
+  border-left: 1px solid #f4f7f9;
+  overflow: visible;
+  position: relative;
+}
+
+.pricing-cell4 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f4f7f9;
+  overflow: visible;
+  position: relative;
+}
+
+.pricing-table-column:nth-of-type(3) {
+	background: #fff;
+  box-shadow: 1px 0 2px rgba(0,0,0,.05);
+  position: relative;
+  z-index: 3;
+  border-right: none;
+}
+
+.pricing {
+
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.pricing-cell-header {
+
+}
+
+.pricing-cell h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+}
+
+.pricing-cell p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.pricing span {
+  color: #222;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.pricing-cell .button {
+  margin-bottom: 0;
+  display: block;
+  z-index: 1;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-color: #ccc;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pricing-table .pricing-cell h4, .pricing-table .pricing-cell li {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.pricing-table .pricing-cell li {
+  color: #323b43;
+  list-style-type: none;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+
+.pricing-table .pricing-cell li:first-child {
+  margin-top: 0;
+}
+
+.pricing-table .pricing-cell h4, .pricing-table .pricing-cell li {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.pricing-table .pricing-cell ul {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.features1 ul {
+	font-size: 14px;
+  	text-align: left;
+  	list-style-type: none;
+}
+
+
+.features2 ul {
+	font-size: 14px;
+  	text-align: left;
+  	list-style-type: none;
+}
+
+.features3 ul {
+	font-size: 14px;
+  	text-align: left;
+  	list-style-type: none;
+}
+
+.features1 {
+  padding-bottom: 81px;
+  border-bottom: 1px solid #f4f7f9;
+}
+
+.features2 {
+  padding-bottom: 42px;
+  border-bottom: 1px solid #f4f7f9;
+}
+
+.features3 {
+  border-bottom: 1px solid #ced7df;
+  margin-left: -10px;
+
+}
+
+.pricing-cell.expo {
+  border-bottom: 1px solid #fefefe;
+}
+
+
+.timespan {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #d4d4d4;
+  width: 250px;
+  height: 34px;
+  display: inline-block;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+h2.subtitle {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+body {
+  font-family: 'Raleway', 'Proxima Nova', 'Lato', Calibri, Arial, sans-serif;
+  color: #222;
+  height: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.macbooks {
+  margin-bottom: -167px;
+}
+
+.pricing-cell.expo {
+  padding-bottom: 177px;
+}
+
+/** Tooltip **/
+
+/* Base styles for the element that has a tooltip */
+[data-tooltip],
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Base styles for the entire tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: 
+      opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    -moz-transition:    
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+    transition:         
+        opacity 0.2s ease-in-out,
+        visibility 0.2s ease-in-out,
+        transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform:    translate3d(0, 0, 0);
+  transform:         translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+/* Show the entire tooltip on hover and focus */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Base styles for the tooltip's directional arrow */
+.tooltip:before,
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+/* Base styles for the tooltip's content area */
+.tooltip:after,
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+  width: 270px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Directions */
+
+/* Top (default) */
+[data-tooltip]:before,
+[data-tooltip]:after,
+.tooltip:before,
+.tooltip:after,
+.tooltip-top:before,
+.tooltip-top:after {
+  bottom: 100%;
+  left: 50%;
+}
+
+[data-tooltip]:before,
+.tooltip:before,
+.tooltip-top:before {
+  margin-left: -6px;
+  margin-bottom: -12px;
+  border-top-color: #000;
+  border-top-color: hsla(0, 0%, 20%, 0.9);
+}
+
+/* Horizontally align top/bottom tooltips */
+[data-tooltip]:after,
+.tooltip:after,
+.tooltip-top:after {
+  margin-left: -80px;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after,
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after,
+.tooltip-top:hover:before,
+.tooltip-top:hover:after,
+.tooltip-top:focus:before,
+.tooltip-top:focus:after {
+  -webkit-transform: translateY(-12px);
+  -moz-transform:    translateY(-12px);
+  transform:         translateY(-12px); 
+}
+
+/* Left */
+.tooltip-left:before,
+.tooltip-left:after {
+  right: 100%;
+  bottom: 50%;
+  left: auto;
+}
+
+.tooltip-left:before {
+  margin-left: 0;
+  margin-right: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-left-color: #000;
+  border-left-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-left:hover:before,
+.tooltip-left:hover:after,
+.tooltip-left:focus:before,
+.tooltip-left:focus:after {
+  -webkit-transform: translateX(-12px);
+  -moz-transform:    translateX(-12px);
+  transform:         translateX(-12px); 
+}
+
+/* Bottom */
+.tooltip-bottom:before,
+.tooltip-bottom:after {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+}
+
+.tooltip-bottom:before {
+  margin-top: -12px;
+  margin-bottom: 0;
+  border-top-color: transparent;
+  border-bottom-color: #000;
+  border-bottom-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-bottom:hover:before,
+.tooltip-bottom:hover:after,
+.tooltip-bottom:focus:before,
+.tooltip-bottom:focus:after {
+  -webkit-transform: translateY(12px);
+  -moz-transform:    translateY(12px);
+  transform:         translateY(12px); 
+}
+
+/* Right */
+.tooltip-right:before,
+.tooltip-right:after {
+  bottom: 50%;
+  left: 100%;
+}
+
+.tooltip-right:before {
+  margin-bottom: 0;
+  margin-left: -12px;
+  border-top-color: transparent;
+  border-right-color: #000;
+  border-right-color: hsla(0, 0%, 20%, 0.9);
+}
+
+.tooltip-right:hover:before,
+.tooltip-right:hover:after,
+.tooltip-right:focus:before,
+.tooltip-right:focus:after {
+  -webkit-transform: translateX(12px);
+  -moz-transform:    translateX(12px);
+  transform:         translateX(12px); 
+}
+
+/* Move directional arrows down a bit for left/right tooltips */
+.tooltip-left:before,
+.tooltip-right:before {
+  top: 3px;
+}
+
+/* Vertically center tooltip content for left/right tooltips */
+.tooltip-left:after,
+.tooltip-right:after {
+  margin-left: 0;
+  margin-bottom: -16px;
+}
+
+a.tooltip-top {
+  margin-left: -13px;
+}
+
+</style>
+
+<div class="section first">
+	<div class="row">
+		<div class="medium-10 large-7 medium-centered columns text-center">
+
+			<div class="row fade-in">
+				<div class="small-9 medium-4 small-centered columns">
+					<div class="logo">
+						<img src="assets/logo.png" />
+					</div>
+				</div>
+			</div>
+
+			<div class="fade-in one">
+				<h1>Built to Optimize Your Event Marketing</h1>
+			</div>
+
+
+			<h2 class="subtitle fade-in two">The best way to <strong>improve</strong> your <br>events and sell <strong>more</strong> tickets.</h2>
+
+
+		</div>
+	</div>
+</div>
+
+
+<footer>
+Made with ♥ in London. <a href="">
+</footer>
