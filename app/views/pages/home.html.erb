@@ -523,7 +523,45 @@ a#hide {
   color: #a3a3a5;
 }
 
-a#hide.active {
+a#toggle {
+  width: 50%;
+  display: block;
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  text-align: center;
+  color: #a3a3a5;
+}
+
+a#toggle2 {
+  width: 50%;
+  display: block;
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  text-align: center;
+  color: #a3a3a5;
+}
+
+a#hide {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #edf3f9;
+  font-weight: 700;
+  color: #76777f;
+}
+
+a.active {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #edf3f9;
+  font-weight: 700;
+  color: #76777f;
+}
+
+a#toggle2 {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   background-color: #edf3f9;
@@ -548,16 +586,37 @@ a#show {
   <script>
     $(function() {
       $("#monthly").hide();
+      $("#toggle").hide();
+      $("#toggle2").hide();
       $('#hide').click(function() {
                 $('#onetime').show();
                 $('#monthly').hide();
-                $(this).parents('a').addClass('active');     
+       });
+      $('#toggle').click(function() {
+                $('#onetime').show();
+                $('#monthly').hide();
+                $('#toggle').hide();
+                $('#hide').show();
+                $('#toggle2').hide();
+                $('#show').show();
        });
 
      $('#show').click(function() {
                 $('#monthly').show();
                 $('#onetime').hide();
-                $(target_tab_selector).removeClass('active');                    
+                $("a#hide ").hide();
+                $("#show ").hide();
+                $("#toggle2 ").show();
+                $("#toggle").show();
+   
+       });
+
+     $('#toggle2').click(function() {
+                $('#monthly').show();
+                $('#onetime').hide();
+                $("a#hide ").hide();
+                $("#toggle").show();
+   
        });
      $('#toggle').click(function() {
                 $('td:nth-child(3)').toggle();                
@@ -598,8 +657,10 @@ a#show {
 		<div class="row">
 			<div id="" class="col-sm-offset-4 col-sm-4 col-xs-12 timespan">
 				<div id="timespan-inner">
-					<a id="hide" class="active">One time</a>
+				  <a id="hide" class="toggle">One time</a>
+          <a id="toggle">One time</a>
           <a id="show">Monthly</a>
+          <a id="toggle2">Monthly</a>
 				</div>
 			</div>
 		</div>
