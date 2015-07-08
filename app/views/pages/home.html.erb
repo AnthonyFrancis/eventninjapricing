@@ -512,20 +512,6 @@ a.tooltip-top {
   margin-left: -13px;
 }
 
-Table.GridOne {
-  padding: 3px;
-  margin: 0;
-  background: lightyellow;
-  border-collapse: collapse;  
-  width:45%;
-}
-
-Table.GridOne Td {  
-  padding:2px;
-  border: 1px solid #ff9900;
-  border-collapse: collapse;
-}
-
 a#hide {
   width: 50%;
   display: block;
@@ -535,6 +521,14 @@ a#hide {
   font-size: 15px;
   text-align: center;
   color: #a3a3a5;
+}
+
+a#hide.active {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #edf3f9;
+  font-weight: 700;
+  color: #76777f;
 }
 
 a#show {
@@ -556,12 +550,14 @@ a#show {
       $("#monthly").hide();
       $('#hide').click(function() {
                 $('#onetime').show();
-                $('#monthly').hide();               
+                $('#monthly').hide();
+                $(this).parents('a').addClass('active');     
        });
 
      $('#show').click(function() {
                 $('#monthly').show();
-                $('#onetime').hide();                   
+                $('#onetime').hide();
+                $(target_tab_selector).removeClass('active');                    
        });
      $('#toggle').click(function() {
                 $('td:nth-child(3)').toggle();                
@@ -602,8 +598,8 @@ a#show {
 		<div class="row">
 			<div id="" class="col-sm-offset-4 col-sm-4 col-xs-12 timespan">
 				<div id="timespan-inner">
-					<a id="hide" type="button">One time</a>
-          <a id="show" class="monthly" type="button">Monthly</a>
+					<a id="hide" class="active">One time</a>
+          <a id="show">Monthly</a>
 				</div>
 			</div>
 		</div>
