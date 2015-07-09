@@ -579,14 +579,6 @@ a#show {
   color: #a3a3a5;
 }
 
-div#myModal {
-  position: fixed;
-  top: 30%;
-  left: 30%;
-  margin-top: -50px;
-  margin-left: -100px;
-}
-
 input.form-control {
   border-color: #888;
 }
@@ -594,6 +586,8 @@ input.form-control {
 
 .modal-content {
   width: 50%;
+  top: 200px;
+  left: 150px;
 }
 
 </style>
@@ -701,7 +695,7 @@ input.form-control {
 						<div class="pricing-table--price"><span>$59 </span>/1 events</div>
 						<br><br>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#ontime_one">
             30 Day Money Back Guarantee, Start Now
             </button>
 
@@ -731,7 +725,11 @@ input.form-control {
 						<p>Best for the regular medium size events.</p>
 						<div class="pricing-table--price"><span>$159 </span>/3 events</div>
 						<br><br>
-						<a class="btn btn-default" href="#" role="button">30 Day Money Back Guarantee, Start Now</a>
+						<!-- Button trigger modal -->
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#ontime_two">
+            30 Day Money Back Guarantee, Start Now
+            </button>
+
 					</div>
 
 					<div class="pricing-cell">
@@ -782,7 +780,9 @@ input.form-control {
               <p>Best for the curious product explorer.</p>
               <div class="pricing-table--price"><span>Free</span></div>
               <br><br>
-              <a class="btn btn-default" href="#" role="button">Pay With A Tweet</a>
+
+              <a class="btn btn-default" href="#" role="button"  data-toggle="modal" data-target="#monthly_one">Start Your Free 30-Day Trial</a>
+
             </div>
 
             <div class="pricing-cell">
@@ -814,7 +814,7 @@ input.form-control {
               <p>Best for the casual event <br>creator.</p>
               <div class="pricing-table--price"><span>$49</span> per month</div>
               <br><br>
-              <a class="btn btn-default" href="#" role="button">Start Your Free 30-Day Trial</a>
+              <a class="btn btn-default" href="#" role="button"  data-toggle="modal" data-target="#monthly_two">Start Your Free 30-Day Trial</a>
             </div>
 
             <div class="pricing-cell">
@@ -843,7 +843,9 @@ input.form-control {
               <p>Best for the regular meetup events.</p>
               <div class="pricing-table--price"><span>$149</span> per month</div>
               <br><br>
-              <a class="btn btn-default" href="#" role="button">Start Your Free 30-Day Trial</a>
+
+              <a class="btn btn-default" href="#" role="button"  data-toggle="modal" data-target="#monthly_three">Start Your Free 30-Day Trial</a>
+
             </div>
 
             <div class="pricing-cell">
@@ -1106,13 +1108,13 @@ input.form-control {
 </div>
 
  <!-- Modal Small-->
-            <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal fade" id="ontime_one" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
 
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Almost there Master Sensei...</h4>
+                  <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
                 </div>
                   <div class="modal-body">
                     <input type="text" class="form-control">
@@ -1124,7 +1126,81 @@ input.form-control {
               </div>
             </div>
 
-            
+  <!-- Modal Small-->
+            <div class="modal fade" id="ontime_two" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
+                </div>
+                  <div class="modal-body">
+                    <input type="text" class="form-control">
+                  </div>
+                   <div class="modal-footer">
+                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+  <!-- Monthly Basic-->
+            <div class="modal fade" id="monthly_one" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
+                </div>
+                  <div class="modal-body">
+                    <input type="text" class="form-control">
+                  </div>
+                   <div class="modal-footer">
+                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+<!-- Monthly Basic-->
+            <div class="modal fade" id="monthly_two" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
+                </div>
+                  <div class="modal-body">
+                    <input type="text" class="form-control">
+                  </div>
+                   <div class="modal-footer">
+                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+<!-- Monthly Basic-->
+            <div class="modal fade" id="monthly_three" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
+                </div>
+                  <div class="modal-body">
+                    <input type="text" class="form-control">
+                  </div>
+                   <div class="modal-footer">
+                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+                    </div>
+                </div>
+              </div>
+            </div>       
 
 <footer>
 Made with ♥ in London. <a href="">
