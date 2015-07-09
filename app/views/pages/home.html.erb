@@ -580,11 +580,20 @@ a#show {
 }
 
 div#myModal {
-  margin-top: 200px;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -100px;
 }
 
 input.form-control {
-  border-color: #f4f7f9;
+  border-color: #888;
+}
+
+
+.modal-content {
+  width: 50%;
 }
 
 </style>
@@ -1097,18 +1106,25 @@ input.form-control {
 </div>
 
  <!-- Modal Small-->
-            <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
+                </div>
                   <div class="modal-body">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" class="form-control">
                   </div>
                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary pull-left">Step 1 - Enter Email</button>
+                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
                     </div>
                 </div>
               </div>
             </div>
+
+            
 
 <footer>
 Made with ♥ in London. <a href="">
