@@ -15,7 +15,6 @@
 .pricing-table {
   border: 1px solid #ced7df;
   border-radius: 3px;
-  padding-bottom: 586px;
   background: #fefefe;
   box-sizing: border-box;
 }
@@ -296,7 +295,7 @@ body {
 }
 
 .pricing-cell.expo {
-  padding-bottom: 196px;
+  padding-bottom: 152px;
 }
 
 /** Tooltip **/
@@ -580,6 +579,14 @@ a#show {
   color: #a3a3a5;
 }
 
+div#myModal {
+  margin-top: 200px;
+}
+
+input.form-control {
+  border-color: #f4f7f9;
+}
+
 </style>
 
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
@@ -640,6 +647,10 @@ a#show {
 				<h1>Built to Optimize Your Event Marketing</h1>
 			</div>
 
+      
+
+
+
 			<h2 class="subtitle fade-in two">The best way to <strong>improve</strong> your <br>events and sell <strong>more</strong> tickets.</h2>
 
 
@@ -680,7 +691,11 @@ a#show {
 						<p>Best for the one off event.</p>
 						<div class="pricing-table--price"><span>$59 </span>/1 events</div>
 						<br><br>
-						<a class="btn btn-default" href="#" role="button">30 Day Money Back Guarantee, Start Now</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">
+            30 Day Money Back Guarantee, Start Now
+            </button>
+
 					</div>
 
 					<div class="pricing-cell">
@@ -1080,6 +1095,20 @@ a#show {
 		</div>
 	</div>
 </div>
+
+ <!-- Modal Small-->
+            <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                   <div class="modal-footer">
+                      <button type="button" class="btn btn-primary pull-left">Step 1 - Enter Email</button>
+                    </div>
+                </div>
+              </div>
+            </div>
 
 <footer>
 Made with ♥ in London. <a href="">
