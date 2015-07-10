@@ -9,7 +9,6 @@
 
 .section2 {
   padding-top: 20px;
-  padding-bottom: 30px;
 }
 
 .pricing-table {
@@ -157,6 +156,7 @@
   color: #333;
   background-color: #fff;
   border-color: #ccc;
+  font-weight: bold;
 }
 
 a:hover {
@@ -590,6 +590,17 @@ input.form-control {
   left: 150px;
 }
 
+form {
+  background-color: #fff;
+  padding: 0px;
+  border-radius: 0px;
+  margin: 0px 0 0;
+}
+
+input#saveForm {
+  font-weight: bold;
+}
+
 </style>
 
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
@@ -649,10 +660,6 @@ input.form-control {
 			<div class="fade-in one">
 				<h1>Built to Optimize Your Event Marketing</h1>
 			</div>
-
-      
-
-
 
 			<h2 class="subtitle fade-in two">The best way to <strong>improve</strong> your <br>events and sell <strong>more</strong> tickets.</h2>
 
@@ -1107,6 +1114,10 @@ input.form-control {
 	</div>
 </div>
 
+<form id="form3" name="form3" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+      action="https://eventninja.wufoo.com/forms/qd25f940oojt1q/#public">
+
+
  <!-- Modal Small-->
             <div class="modal fade" id="ontime_one" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog" role="document">
@@ -1117,16 +1128,28 @@ input.form-control {
                   <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
                 </div>
                   <div class="modal-body">
-                    <input type="text" class="form-control">
+                    <label class="desc" id="title1" for="Field1">
+                    Email:
+                    </label>
+                    <div>
+                      <input id="Field1" name="Field1" type="text" class="field text form-control" value="" maxlength="255" tabindex="1" onkeyup=""       />
+                    </div>
                   </div>
                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
-                    </div>
+
+                    <input id="saveForm" name="saveForm" class="btn btn-primary pull-left" type="submit" value="Step 1 - Enter Email"/>
+
+                    <li class="hide">
+                      <label for="comment">Do Not Fill This Out</label>
+                      <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                      <input type="hidden" id="idstamp" name="idstamp" value="QzaQPIoT/Vy4heF5D2vNyy+vzWvJNXBzK2tjUmVR4Hg=" />
+                    </li>
+                  </div>
                 </div>
               </div>
             </div>
 
-  <!-- Modal Small-->
+  <!-- Modal Medium-->
             <div class="modal fade" id="ontime_two" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -1136,11 +1159,23 @@ input.form-control {
                   <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
                 </div>
                   <div class="modal-body">
-                    <input type="text" class="form-control">
+                    <label class="desc" id="title2" for="Field2">
+                    Email:
+                    </label>
+                    <div>
+                    <input id="Field2" name="Field2" type="text" class="field text form-control" value="" maxlength="255" tabindex="2" onkeyup=""       />
                   </div>
+                </div>
                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
-                    </div>
+
+                    <input id="saveForm" name="saveForm" class="btn btn-primary pull-left" type="submit" value="Step 1 - Enter Email"/>
+
+                    <li class="hide">
+                      <label for="comment">Do Not Fill This Out</label>
+                      <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                      <input type="hidden" id="idstamp" name="idstamp" value="QzaQPIoT/Vy4heF5D2vNyy+vzWvJNXBzK2tjUmVR4Hg=" />
+                    </li>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1155,16 +1190,28 @@ input.form-control {
                   <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
                 </div>
                   <div class="modal-body">
-                    <input type="text" class="form-control">
-                  </div>
-                   <div class="modal-footer">
-                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+                    <label class="desc" id="title3" for="Field3">
+                    Email:
+                    </label>
+                    <div>
+                      <input id="Field3" name="Field3" type="text" class="field text form-control" value="" maxlength="255" tabindex="3" onkeyup=""       />
                     </div>
+                  </div>
+                  <div class="modal-footer">
+
+                    <input id="saveForm" name="saveForm" class="btn btn-primary pull-left" type="submit" value="Step 1 - Enter Email"/>
+
+                    <li class="hide">
+                      <label for="comment">Do Not Fill This Out</label>
+                      <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                      <input type="hidden" id="idstamp" name="idstamp" value="QzaQPIoT/Vy4heF5D2vNyy+vzWvJNXBzK2tjUmVR4Hg=" />
+                    </li>
+                  </div>
                 </div>
               </div>
             </div>
 
-<!-- Monthly Basic-->
+<!-- Monthly Casual -->
             <div class="modal fade" id="monthly_two" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -1174,16 +1221,28 @@ input.form-control {
                   <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
                 </div>
                   <div class="modal-body">
-                    <input type="text" class="form-control">
+                    <label class="desc" id="title4" for="Field4">
+                    Email:
+                    </label>
+                    <div>
+                    <input id="Field4" name="Field4" type="text" class="field text form-control" value="" maxlength="255" tabindex="4" onkeyup=""       />
+                    </div>                 
                   </div>
                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+
+                    <input id="saveForm" name="saveForm" class="btn btn-primary pull-left" type="submit" value="Step 1 - Enter Email"/>
+
+                    <li class="hide">
+                      <label for="comment">Do Not Fill This Out</label>
+                      <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                      <input type="hidden" id="idstamp" name="idstamp" value="QzaQPIoT/Vy4heF5D2vNyy+vzWvJNXBzK2tjUmVR4Hg=" />
+                    </li>
                     </div>
                 </div>
               </div>
             </div>
 
-<!-- Monthly Basic-->
+<!-- Monthly Regular-->
             <div class="modal fade" id="monthly_three" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -1193,15 +1252,27 @@ input.form-control {
                   <h4 class="modal-title" id="myModalLabel">Almost there...</h4>
                 </div>
                   <div class="modal-body">
-                    <input type="text" class="form-control">
+                    <label class="desc" id="title5" for="Field5">
+                    Email:
+                    </label>
+                    <div>
+                    <input id="Field5" name="Field5" type="text" class="field text form-control" value="" maxlength="255" tabindex="5" onkeyup=""       />
+                    </div>
                   </div>
                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary pull-left"><span>Step 1 - Enter Email</span></button>
+
+                    <input id="saveForm" name="saveForm" class="btn btn-primary pull-left" type="submit" value="Step 1 - Enter Email"/>
+
+                    <li class="hide">
+                      <label for="comment">Do Not Fill This Out</label>
+                      <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                      <input type="hidden" id="idstamp" name="idstamp" value="QzaQPIoT/Vy4heF5D2vNyy+vzWvJNXBzK2tjUmVR4Hg=" />
+                    </li>
                     </div>
                 </div>
               </div>
             </div>       
-
+</form>
 <footer>
 Made with ♥ in London. <a href="">
 </footer>
